@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Hotel & Restaurant Recommender</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar fade-in">
+        <a href="../index.html">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#guide">Guide</a>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="contact-container fade-in">
+        <h2>Contact Us</h2>
+        <p>If you have any queries, please send us a message using the form below:</p>
+        <form id="contact-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Your Username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Hotel & Restaurant Recommender. All Rights Reserved.</p>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

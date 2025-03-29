@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us - Hotel & Restaurant Recommender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="../video/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar fade-in">
+        <a href="../index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="recommendation_model.html">Recommender System</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-container">
+        <!-- Hero Section -->
+        <section class="hero-section fade-in">
+            <div class="hero-content">
+                <h1>About Us</h1>
+                <p class="hero-subtitle">Your trusted companion in finding the perfect stay and dining experience</p>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="mission-content fade-in">
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p>We strive to revolutionize the way people discover and experience hotels and restaurants. Our platform combines cutting-edge technology with user preferences to provide personalized recommendations that match your unique tastes and requirements.</p>
+                </div>
+                <div class="mission-stats">
+                    <div class="stat-item fade-in">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Hotels</span>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Restaurants</span>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Happy Users</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2 class="section-title fade-in">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized Recommendations</h3>
+                    <p>Get tailored suggestions based on your preferences, location, and budget.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Verified Reviews</h3>
+                    <p>Access authentic reviews from real customers to make informed decisions.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Deals</h3>
+                    <p>Find exclusive offers and competitive prices for your perfect stay.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Coverage</h3>
+                    <p>Explore options worldwide with our extensive database of hotels and restaurants.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2 class="section-title fade-in">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="../images/team1.jpg" alt="Team Member 1">
+                    </div>
+                    <h3>Kabiroooo</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="../images/team2.jpg" alt="Team Member 2">
+                    </div>
+                    <h3>Saniyaaa</h3>
+                    <p>Head of Technology</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="member-image">
+                        <img src="../images/team3.jpg" alt="Team Member 3">
+                    </div>
+                    <h3>Kabiraj</h3>
+                    <p>Lead Developer</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Hotel & Restaurant Recommender. All Rights Reserved.</p>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* General styling for body */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff4e50, #f9d423); /* Gradient */
+    color: white;
+}
+
+/* Fade in effect for smooth entrance */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #ff4e50;
+    border-radius: 10px;
+}
+
+/* Title section */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-top: 80px; /* Adjust for navbar */
+}
+
+.title-box {
+    background: rgba(255, 255, 255, 0.2); /* Transparent box */
+    border-radius: 20px;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.title-box h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons for login/register */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.buttons a {
+    margin: 10px;
+    padding: 15px 30px;
+    background: #ff4e50;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    background: #f9d423;
+    color: #ff4e50;
+}
+
+/* Welcome message */
+.welcome-message {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.welcome-message h2 {
+    font-size: 2rem;
+}
+
+.welcome-message button {
+    padding: 10px 20px;
+    background: #ff4e50;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.welcome-message button:hover {
+    background: #f9d423;
+    color: #ff4e50;
+}
+
+/* Contact Container */
+.contact-container {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form label {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: white;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    border-color: #ff4e50;
+    outline: none;
+}
+
+#contact-form .submit-btn {
+    padding: 15px 30px;
+    background: #ff4e50;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+#contact-form .submit-btn:hover {
+    background: #f9d423;
+    color: #ff4e50;
+}
+
+/* Footer section */
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .title-box h1 {
+        font-size: 3rem;
+    }
+    
+    .buttons a, .get-started-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
